@@ -12,13 +12,13 @@ export const router = createRouter({
     { path: '', redirect: '/coaches' },
     {
       path: '/coaches',
-      componet: CoachList,
+      component: CoachList,
 
-      children: [{ path: '/contact', componet: ContactCoach }],
+      children: [{ path: '/contact', component: ContactCoach }],
     },
-    { path: '/coaches/:id', componet: CoachDetails },
-    { path: '/register', componet: CoachRegistration },
-    { path: '/request', componet: RequestRecived },
-    { path: '/:notFound(.*)', componet: NotFound },
+    { path: '/coaches/:id', component: CoachDetails },
+    { path: '/register', component: CoachRegistration },
+    { path: '/request', component: RequestRecived },
+    { path: '/:notFound(.*)', component: NotFound },
   ],
 });
